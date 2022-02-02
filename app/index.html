@@ -9,7 +9,15 @@
 </head>
 <body>
   <div id='app'>
-    <hello-component></hello-component>
+    <p>{{ message }}</p>
+    <p v-show='toggle'>
+      <a v-bind:href="url">vue.js</a>
+    </p>
+    <ul>
+      <li v-for='la in languages'>{{ la }}</li>
+    </ul>
+    <button v-on:click='clicks'>botann</button>
+    <input type="text" v-model='message'>
   </div>
 </body>
 <script src="practice.js"></script>
