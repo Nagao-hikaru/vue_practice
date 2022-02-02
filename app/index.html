@@ -9,13 +9,12 @@
 </head>
 <body>
   <div id='app'>
-    <ul>
-      <li v-for='value in user'>{{ value }}</li>
-    </ul>
-    <hr>
-    <ul>
-      <li v-for='(value, key) in user'>{{ key }}: {{ value }}</li>
-    </ul>
+      <button v-on:click="onclick">
+        Click!
+      </button>
+      <p>
+        {{ now }}
+      </p>
   </div>
 </body>
 <script src="practice.js"></script>
