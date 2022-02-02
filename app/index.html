@@ -9,12 +9,13 @@
 </head>
 <body>
   <div id='app'>
-      <button v-on:click="onclick">
-        Click!
-      </button>
-      <p>
-        {{ now }}
-      </p>
+    <p>
+      <input type="text" v-model='message'>
+    </p>
+    <p>
+      <input type="text" v-model='message'>
+    </p>
+    <pre>{{ $data }}</pre>
   </div>
 </body>
 <script src="practice.js"></script>

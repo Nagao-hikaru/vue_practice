@@ -1,13 +1,8 @@
 var app = new Vue({
   el: '#app', //マウントする要素
   data: {
-    now: '',
+    message: 'Hello vue.js',
   },
-  methods: {
-    onclick: function() {
-      this.now = new Date().toLocaleString();
-    }
-  }
 })
 
 
