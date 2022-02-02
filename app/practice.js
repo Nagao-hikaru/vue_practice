@@ -1,1 +1,3 @@
-console.log(Vue.version);
+var app = new Vue({
+
+})
