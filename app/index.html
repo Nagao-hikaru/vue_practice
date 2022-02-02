@@ -9,9 +9,13 @@
 </head>
 <body>
   <div id='app'>
-    <p v-show="toggle">
-      Hello
-    </p>
+    <ul>
+      <li v-for='value in user'>{{ value }}</li>
+    </ul>
+    <hr>
+    <ul>
+      <li v-for='(value, key) in user'>{{ key }}: {{ value }}</li>
+    </ul>
   </div>
 </body>
 <script src="practice.js"></script>
