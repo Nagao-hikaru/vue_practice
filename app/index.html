@@ -12,6 +12,7 @@
     <h2>TODO List</h2>
     <form action="" v-on:submit.prevent>
       <input type="text" v-model='newItem'>
+      <button v-on:click='deleteInput'>delete</button>
       <button v-on:click='addItem'>
         Add
       </button>
