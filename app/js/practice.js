@@ -22,6 +22,9 @@ var app = new Vue({
     deleteInput: function () {
       this.newItem = '';
     },
+    deleteItem: function (index) {
+      this.todos.splice(index, 1);
+    },
   }
 })
 
