@@ -5,10 +5,17 @@ var app = new Vue({
   el: '#app', //マウントする要素
   data: {
     newItem: '',
+    todos: [
+
+    ]
   },
   methods: {
     addItem: function (event) {
-      alert();
+      var todo = {
+        item: this.newItem,
+      };
+
+      this.todos.push(todo)
     }
   }
 })
