@@ -5,6 +5,7 @@ Vue.filter('readMore', function (text, length, suffix) {
 var app = new Vue({
   el: '#app',
   data: {
+    url: 'https://github.com/Nagao-hikaru/lara_practice',
     text: 'nvondopdfkvndfkfdnfdngvnafpkvapnvfkdnvpdfkjndfpndfkdfnpdlfnb',
   },
   filters: {

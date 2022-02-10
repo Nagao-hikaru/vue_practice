@@ -10,6 +10,8 @@
 </head>
 <body>
   <div id='app'>
+    <a v-bind:href='url'>Link</a>
+    <a :href='url'>Link2</a>
     <p>
       {{ text | readMore(20, '...')}}
     </p>
