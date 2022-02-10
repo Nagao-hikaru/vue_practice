@@ -11,9 +11,8 @@
 <body>
   <div id='app'>
     <p>
-      {{ price | numberFormat }}
+      {{ jpyPrice | toUSD | numberFormat }}
     </p>
-    <input type="text" v-bind:value="price | numberFormat">
   </div>
 </body>
 <script src="./js/template.js"></script>
