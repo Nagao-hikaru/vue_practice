@@ -11,17 +11,9 @@
 <body>
   <div id='app'>
     <p>
-      {{ message }}
+      {{ price | numberFormat }}
     </p>
-    <p>
-      {{ number + 1 }}
-    </p>
-    <p>
-      {{ message.split('').reverse().join('') }}
-    </p>
-    <p>
-      {{ ok ? 'Yes' : 'No' }}
-    </p>
+    <input type="text" v-bind:value="price | numberFormat">
   </div>
 </body>
 <script src="./js/template.js"></script>

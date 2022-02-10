@@ -1,9 +1,12 @@
 var app = new Vue({
   el: '#app',
   data: {
-    message: 'Hello Vue.js',
-    number: 100,
-    ok: true,
+    price: 2980000,
+  },
+  filters: {
+    numberFormat: function (value) {
+      return value.toLocaleString();
+    }
   },
   methods: {
     clickHandler: function (event) {
