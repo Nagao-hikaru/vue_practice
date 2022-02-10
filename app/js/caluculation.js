@@ -3,6 +3,11 @@ var app = new Vue({
   data: {
     basePrice: 100,
   },
+  methods: {
+    methodsNumber: function () {
+      return Math.random();
+    }
+  },
   computed: {
     reversedMessage: function () {
       return this.message.split('').reverse().join('');
@@ -14,6 +19,9 @@ var app = new Vue({
       set: function (taxIncludedPrice) {
         this.basePrice = Math.ceil(taxIncludedPrice / 1.08)
       }
+    },
+    computedNumber: function () {
+      return Math.random();
     }
   }
 })
