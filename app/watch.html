@@ -11,6 +11,13 @@
 </head>
 <body>
   <div id='app'>
+    <p>
+      {{ message }}
+    </p>
+    <p>
+      <input type="text" v-model:value="message">
+    </p>
+    <pre>{{ $data }}</pre>
   </div>
 </body>
 <script src="./js/watch.js"></script>
