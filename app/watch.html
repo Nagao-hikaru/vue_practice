@@ -31,6 +31,18 @@
     <p>
       <input type="text" v-model:value="mm">mm
     </p>
+    <p>
+      firstName: <input type="text" v-model:value="firstName">
+    </p>
+    <p>
+      lastName: <input type="text" v-model:value="lastName">
+    </p>
+    <p>
+      fullName: {{ fullName }}
+    </p>
+    <ul>
+      <li v-for="color in colors"> {{ color.name }}</li>
+    </ul>
   </div>
 </body>
 <script src="./js/watch.js"></script>
