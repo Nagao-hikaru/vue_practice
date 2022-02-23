@@ -42,6 +42,7 @@ var app = new Vue({
         console.log('updated!')
       },
       deep: true,
+      immediate: true,
     }
     // firstName: function (value) {
     //   this.fullName = value + ' ' + this.lastName
