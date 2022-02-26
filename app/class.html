@@ -12,6 +12,7 @@
   <div id='app'>
 
     <p>Hello <span v-bind:class="isLarge ? dangerClass : largeClass">Vue.js</span></p>
+    <p>Hello <span v-bind:style="{color: color, fontSize: fontSize + 'px'}">Vue.js</span></p>
   </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/axios@0.18.0/dist/axios.min.js"></script>

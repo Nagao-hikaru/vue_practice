@@ -1,6 +1,8 @@
 var app = new Vue({
   el: '#app', //マウントする要素
   data: {
+    color: 'blue',
+    fontSize: 26,
     isLarge: false,
     hasError: true,
     largeClass: {
