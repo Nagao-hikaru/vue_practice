@@ -21,6 +21,7 @@ var app = new Vue({
     getAnswer: function () {
       if (this.keyWord === '') {
         this.items = null
+        this.message = '';
         return 
       }
 
