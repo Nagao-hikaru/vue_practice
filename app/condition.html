@@ -10,10 +10,11 @@
 </head>
 <body>
   <div id='app'>
-
-    <p>Hello <span v-bind:class="isLarge ? dangerClass : largeClass">Vue.js</span></p>
-    <p>Hello <span v-bind:style="{color: color, fontSize: fontSize + 'px'}">Vue.js</span></p>
-    <p>Hello <span v-bind:style="styleObject">Vue.js</span></p>
+    <p v-if="color === 'red' ">stop</p>
+    <p v-else-if="color === 'yellow'">coution</p>
+    <p v-else-if="color === 'blue' ">go</p>
+    <p v-else>not red yellow blue</p>
+    <p v-show="toggle">Hello</p>
   </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/axios@0.18.0/dist/axios.min.js"></script>
