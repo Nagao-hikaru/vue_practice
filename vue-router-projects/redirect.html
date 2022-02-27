@@ -21,9 +21,10 @@
         routes: [
           {
             path: '/a',
-            redirect: '/b'
+            redirect: { name: 'page'}
           },
           {
+            name: 'page',
             path: '/b',
             component: B
           }
