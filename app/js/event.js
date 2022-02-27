@@ -6,9 +6,8 @@ var app = new Vue({
   },
   methods: {
     clickHandler: function ($event, message) {
-      this.counter ++
-      this.message = message
+      this.message = new Date().toLocaleTimeString()
     },
-    
+
   },
 })
