@@ -10,10 +10,16 @@
 </head>
 <body>
   <div id='app'>
-    <hello-component></hello-component>
+    <!-- <hello-component></hello-component>
     <button-counter></button-counter>
     <button-counter></button-counter>
-    <button-counter></button-counter>
+    <button-counter></button-counter> -->
+    <button v-on:click="show=!show">change</button>
+    <transition>
+      <p v-show="show">
+        Hello transition
+      </p>
+    </transition>
   </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/axios@0.18.0/dist/axios.min.js"></script>

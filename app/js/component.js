@@ -15,6 +15,7 @@ Vue.component('button-counter', {
 var app = new Vue({
   el: '#app', //マウントする要素
   data: {
+    show: false,
   },
   // components: {
   //   'hello-component' : helloComponent //今ポーメント名はケバブケースで書く。
