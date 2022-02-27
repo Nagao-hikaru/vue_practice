@@ -8,6 +8,9 @@ var app = new Vue({
     clickHandler: function ($event, message) {
       this.message = new Date().toLocaleTimeString()
     },
+    clear: function () {
+      this.message = ''
+    },
 
   },
 })

@@ -10,8 +10,8 @@
 </head>
 <body>
   <div id='app'>
-    <button v-on:click.once="clickHandler($event, 'vue.js')">NOW</button>
-    <p>{{ message }}</p>
+    <input type="text" v-on:keyUp.27="clear" v-model="message">
+    {{ message }}
   </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/axios@0.18.0/dist/axios.min.js"></script>
