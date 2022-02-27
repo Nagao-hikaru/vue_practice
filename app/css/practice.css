@@ -25,3 +25,11 @@
 .text-blue {
   color: blue;
 }
+
+.v-enter-active {
+  transition: opacity 5s;
+}
+
+.v-enter {
+  opacity: 0;
+}
