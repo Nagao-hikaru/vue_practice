@@ -7,6 +7,5 @@ var app = new Vue({
 
     ],
     radioColor: '',
-
   },
 })
