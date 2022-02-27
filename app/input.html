@@ -17,6 +17,14 @@
     <label for="green">green</label>
     <input type="checkbox" id="blue" value="blue" v-model="colors">
     <label for="blue">blue</label>
+    <br>
+    <input type="radio" id="red" value="red" v-model="radioColor">
+    <label for="red">red</label>
+    <input type="radio" id="green" value="gren" v-model="radioColor">
+    <label for="green">green</label>
+    <input type="radio" id="blue" value="blue" v-model="radioColor">
+    <label for="blue">blue</label>
+    <p>{{ radioColor }}</p>
     <pre>{{ $data }}</pre>
   </div>
 </body>
