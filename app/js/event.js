@@ -6,7 +6,7 @@ var app = new Vue({
   },
   methods: {
     clickHandler: function ($event, message) {
-      this.message = new Date().toLocaleTimeString()
+      alert('shift');
     },
     clear: function () {
       this.message = ''

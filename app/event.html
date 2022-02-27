@@ -10,7 +10,9 @@
 </head>
 <body>
   <div id='app'>
-    <input type="text" v-on:keyUp.27="clear" v-model="message">
+    <!-- <input type="text" v-on:keyUp.27="clear" v-model="message"> -->
+    <input type="text" v-on:keyUp.ctrl.67="clear" v-model="message">
+    <div @click.shift="clickHandler">click me</div>
     {{ message }}
   </div>
 </body>
