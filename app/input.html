@@ -25,6 +25,10 @@
     <input type="radio" id="blue" value="blue" v-model="radioColor">
     <label for="blue">blue</label>
     <p>{{ radioColor }}</p>
+    <input type="text" v-model.lazy="message">
+    <p>
+      {{ message }}
+    </p>
     <pre>{{ $data }}</pre>
   </div>
 </body>
