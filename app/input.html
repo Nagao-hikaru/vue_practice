@@ -10,10 +10,14 @@
 </head>
 <body>
   <div id='app'>
-    <input type="text" v-model="message">
-    <p>{{ message }}</p>
-    <textarea v-model="message" name="" id="" cols="30" rows="10"></textarea>
-    <pre>{{ message }}</pre>
+
+    <input type="checkbox" id="red" value="red" v-model="colors">
+    <label for="red">Red</label>
+    <input type="checkbox" id="green" value="green" v-model="colors">
+    <label for="green">green</label>
+    <input type="checkbox" id="blue" value="blue" v-model="colors">
+    <label for="blue">blue</label>
+    <pre>{{ $data }}</pre>
   </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/axios@0.18.0/dist/axios.min.js"></script>
